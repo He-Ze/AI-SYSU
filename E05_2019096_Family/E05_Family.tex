@@ -1,0 +1,91 @@
+﻿\documentclass[a4paper, 11pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{listings}
+\geometry{scale=0.8}
+\linespread{1.5}
+\usepackage{hyperref}
+
+\title{	
+\normalfont \normalsize
+\textsc{School of Data and Computer Science, Sun Yat-sen University} \\ [25pt] %textsc small capital letters
+\rule{\textwidth}{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge  E05 Family Problem ( Prolog )\\ % The assignment title
+\rule{\textwidth}{2pt} \\[0.5cm] % Thick bottom horizontal rule
+\author{20214966 Yangkai Lin 20214810 Suixin Ou}
+\date{\normalsize\today}
+}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{About Cousin and Removed}
+\textbf{What Is a First Cousin, Twice Removed?}
+
+If someone walked up to you and said, ``Howdy, I'm your third cousin, twice removed," would you have any idea what they meant? Most people have a good understanding of basic relationship words such as ``mother," ``father," ``aunt," ``uncle," ``brother," and ``sister." But what about the relationship terms that we don't use in everyday speech? Terms like ``second cousin" and ``first cousin, once removed"? We don't tend to speak about our relationships in such exact terms (``cousin" seems good enough when you are introducing one person to another), so most of us aren't familiar with what these words mean.
+
+\textbf{Relationship Terms}
+
+Sometimes, especially when working on your family history, it's handy to know how to describe your family relationships more exactly. The definitions below should help you out.
+
+\textbf{Cousin (a.k.a ``first cousin")}
+
+Your first cousins are the people in your family who have two of the same grandparents as you. In other words, they are the children of your aunts and uncles.
+
+\textbf{Second Cousin}
+
+Your second cousins are the people in your family who have the same great-grandparents as you., but not the same grandparents.
+
+\textbf{Third, Fourth, and Fifth Cousins}
+
+Your third cousins have the same great great grandparents, fourth cousins have the same great-great-great-grandparents, and so on.
+
+\textbf{Removed}
+
+When the word ``removed" is used to describe a relationship, it indicates that the two people are from different generations. You and your first cousins are in the same generation (two generations younger than your grandparents), so the word ``removed" is not used to describe your relationship.
+
+The words ``\textbf{once removed}" mean that there is a difference of one generation. For example, your mother's first cousin is your first cousin, once removed. This is because your mother's first cousin is one generation younger than your grandparents and you are two generations younger than your grandparents. This one-generation difference equals ``once removed."
+
+\textbf{Twice removed} means that there is a two-generation difference. You are two generations younger than a first cousin of your grandmother, so you and your grandmother's first cousin are first cousins, twice removed.
+\section{Problem Description}
+Please fulfill the following tasks by using \texttt{Prolog}:
+\begin{enumerate}
+\item Using the predicates \textbf{male}, \textbf{female}, \textbf{child}, and \textbf{spouse}, write facts and rules describing the family tree in Figure \ref{fig:family}, and add the fact that William has a daughter Charlotte. Please do not write redundant facts that can be defined with rules.
+
+\item Write rules describing the predicates \textbf{Grandchild}, \textbf{Greatgrandparent}, \textbf{Ancestor}, \textbf{Sibling}, \textbf{Brother}, \textbf{Sister}, \textbf{Daughter}, \textbf{Son}, \textbf{FirstCousin}, \textbf{BrotherInLaw}, \textbf{SisterInLaw}, \textbf{Aunt}, and \textbf{Uncle}.
+
+\item Find out the proper definition of \textbf{\emph{m}th cousin \emph{n} times removed}, and write rules to define the predicate \texttt{mthCousinNremoved(X,Y,M,N)}. \emph{Hint: You'd better define a helper predicate \texttt{distance(X,Y,N)} meaning that there are N generations between X and Y by recursion ( please refer to \texttt{hanoi.pl}).}
+
+\item ASK who are \textbf{Elizabeth’s grandchildren}, \textbf{Diana’s brothers-in-law}, \textbf{Zara’s great-grandparents}, \textbf{Eugenie’s ancestors}, and \textbf{Charlotte’s first cousin once removed}.
+\end{enumerate}
+
+\begin{figure}[h]  
+  \centering
+  \includegraphics[width=15cm]{Pic/family}
+
+  \label{fig:family}
+  \caption{A typical family tree. The symbol $\bowtie$ connects spouses and arrows point to children.}
+\end{figure}
+
+\section{Tasks}
+
+
+\begin{enumerate}
+\item Please complete the \texttt{Prolog} codes. There are several tutorials in the folder and I will explain the usage of Prolog in class.
+\item Write the related codes and take a screenshot of the running results in the file named \textsf{E05\_YourNumber.pdf}, and send it to \textsf{ai\_2020@foxmail.com}.
+
+\end{enumerate}
+\section{Codes}
+\section{Results}
+
+
+%\clearpage
+%\bibliography{E:/Papers/LiuLab}
+%\bibliographystyle{apalike}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

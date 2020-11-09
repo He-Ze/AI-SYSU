@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Examples}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Spare Tire}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Briefcase World}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Tasks}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}8-puzzle}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Blocks World}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Codes and Results}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}8-puzzle}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Blocks World}{11}{subsection.3.2}%

@@ -1,0 +1,19 @@
+latex 安装教程：
+1、进入https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/
+2、下载texlive2020.iso
+3、安装教程可以参考https://blog.csdn.net/Mikchy/article/details/94448707
+4、关于编辑器，个人推荐tex studio，比自带的texlive要好许多倍，但是tex studio的下载链接是国外的，所以下载速度巨慢，为了节省大家时间，我先帮大家下载好，然后上传到群里。
+5、关于tex studio的设置请参考步骤3中的链接
+PS：这么好的TA去哪里找^_^
+
+
+prolog安装教程：
+1、在群里下载swipl-w64-764.exe，直接安装即可
+2、prolog的使用教程可以参考网上任意一篇博客
+PS：老铁双击666
+
+
+
+FF planner安装教程：
+1、因为FF planner在windows环境下无法运行，所以只能安装linux环境(一般是ubuntu)。米娜桑有三种选择：第一种选择是安装双系统，第二种选择是虚拟机，第三种选择是win10自带的linux子系统，个人推荐第二种，因为bug比较少
+2、安装完ubuntu后，下载群里的FF-v2.3.tgz并解压到ubuntu系统，进入FF-v2.3文件夹并打开终端，输入make即可编译得到ff文件，之后就可以愉快玩耍啦。

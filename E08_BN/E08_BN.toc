@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Pomegranate Installation}{2}{section.1}%
+\contentsline {section}{\numberline {2}Building Bayesian Network}{2}{section.2}%
+\contentsline {section}{\numberline {3}Tasks}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Burglary}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Diagnosing}{4}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Codes and Results}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Burglary}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Diagnosing}{9}{subsection.4.2}%

@@ -1,0 +1,135 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{listings}
+\geometry{scale=0.8}
+\linespread{1.5}
+\usepackage{hyperref}
+
+\title{	
+\normalfont \normalsize
+\textsc{School of Data and Computer Science, Sun Yat-sen University} \\ [25pt] %textsc small capital letters
+\rule{\textwidth}{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge  E04 Futoshiki Puzzle (Forward Checking) \\ % The assignment title
+\rule{\textwidth}{2pt} \\[0.5cm] % Thick bottom horizontal rule
+\author{20214810 Suixin Ou\and20214966 Yangkai Lin}
+\date{\normalsize September 21, 2020} 
+}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Futoshiki}
+Futoshiki is a board-based puzzle game, also known under the name Unequal. It is playable on a square board having a given fixed size (4 × 4 for example).
+
+The purpose of the game is to discover the digits hidden inside the board’s cells; each cell is filled with a digit between 1 and the board’s size. On each row and column each digit appears exactly once; therefore, when revealed, the digits of the board form a so-called Latin square.
+
+At the beginning of the game some digits might be revealed. The board might also contain some inequalities between the board cells; these inequalities must be respected and can be used as clues in order to discover the remaining hidden digits.
+
+Each puzzle is guaranteed to have a solution and only one.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=15cm]{E04_Futoshi/figure1.png}
+    \caption{Futoshiki}
+    \label{fig:my_label}
+\end{figure}
+
+You can play this game online: http://www.futoshiki.org/.
+
+
+
+
+\section{Tasks}
+\begin{enumerate}
+
+\item  Please solve the above Futoshiki puzzle ( Figure 1 ) with forward checking algorithm.
+
+\item  Write the related codes and take a screenshot of the running results in the file named E04 YourNumber.pdf, and send it to ai 2020@foxmail.com.
+
+\end{enumerate}
+
+\section{Codes}
+
+\section{Results}
+
+
+%\clearpage
+%\bibliography{E:/Papers/LiuLab}
+%\bibliographystyle{apalike}
+\end{document} 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+\documentclass[a4paper, 11pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{listings}
+\geometry{scale=0.8}
+\linespread{1.5}
+\usepackage{hyperref}
+
+\title{	
+\normalfont \normalsize
+\textsc{School of Data and Computer Science, Sun Yat-sen University} \\ [25pt] %textsc small capital letters
+\rule{\textwidth}{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge  E03 Othello Game (min-max, $\alpha-\beta$ pruning and evaluation function) \\ % The assignment title
+\rule{\textwidth}{2pt} \\[0.5cm] % Thick bottom horizontal rule
+\author{19214808 Yikun Liang}
+\date{\normalsize\today}
+}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Othello}
+Othello (or Reversi) is a strategy board game for two players, played on an $8 \times 8$ uncheckered board. There are sixty-four identical game pieces called disks (often spelled "discs"), which are light on one side and dark on the other. Please see figure \ref{fig:othello}.
+
+Players take turns placing disks on the board with their assigned color facing up. During a play, any disks of the opponent's color that are in a straight line and bounded by the disk just placed and another disk of the current player's color are turned over to the current player's color.
+
+The object of the game is to have the majority of disks turned to display your color when the last playable empty square is filled.
+\begin{figure}
+  \centering
+  \includegraphics[width=6cm]{Pic/othello}
+  \qquad
+  \includegraphics[width=6cm]{Pic/othello2}
+  \caption{Othello Game}
+  \label{fig:othello}
+\end{figure}
+
+You can refer to \url{http://www.tothello.com/html/guideline_of_reversed_othello.html} for more information of guideline, meanwhile, you can download the software to have a try from \url{http://www.tothello.com/html/download.html}. The game installer \texttt{tothello\_trial\_setup.exe} can also be found in the current folder.
+
+
+
+\section{Tasks}
+\begin{enumerate}
+
+\item In order to reduce the complexity of the game, we think the board is $6\times 6$.
+
+\item There are several evaluation functions that involve many aspects, you can turn to \url{http://blog.sina.com.cn/s/blog_53ebdba00100cpy2.html} for help. In order to reduce the difficulty of the task, I have gaven you some hints of evaluation function in the file \texttt{Heuristic Function for Reversi (Othello).cpp}.
+
+\item Please choose an appropriate evaluation function and use min-max and $\alpha-\beta$ prunning to implement the Othello game. The framework file you can refer to is \texttt{Othello.cpp}. Of course, I wish your program can beat the computer.
+
+\item Write the related codes and take a screenshot of the running results in the file named \textsf{E06\_YourNumber.pdf}, and send it to \textsf{ai\_201901@formail.comhh}
+\end{enumerate}
+
+\section{Codes}
+
+\section{Results}
+
+
+%\clearpage
+%\bibliography{E:/Papers/LiuLab}
+%\bibliographystyle{apalike}
+\end{document} 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
