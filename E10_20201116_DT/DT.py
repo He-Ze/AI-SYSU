@@ -1,15 +1,14 @@
-import pickle as pk
-import seaborn as sns
-import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import pickle as pk
+import seaborn as sns
 
-train_data_path = 'dataset/adult.data'
-test_data_path = 'dataset/adult.test'
 header = ['age', 'workclass', 'fnlwgt', 'education', 'education-num',
           'marital-status', 'occupation', 'relationship', 'race', 'sex',
           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country', 'Salaries']
+train_data_path = 'adult.data'
+test_data_path = 'adult.test'
 train_data = pd.read_csv(train_data_path, names=header)
 test_data = pd.read_csv(test_data_path, names=header)
 test_data.drop(0, inplace=True)
@@ -26,8 +25,7 @@ intervals = {}
 for col in continuous_cols:
     i1 = sorted(train_data[col])[pos1]
     i2 = sorted(train_data[col])[pos2]
-    intervals[col] = (range(0, i1+1), range(i1+1, i2+1),
-                      range(i2+1, sorted(train_data[col])[len(train_data)-1]+1))
+    intervals[col] = (range(0, i1+1), range(i1+1, i2+1),range(i2+1, sorted(train_data[col])[len(train_data)-1]+1))
 
 rev_intervals = {}
 for k, v in intervals.items():
@@ -208,29 +206,7 @@ def Benchmarker(DecisionTree, AttrSet, testing_data, log=False):
     else:
         return 1 - check.count(1)/len(testing_data)
 
-testing_data = [
-    [0, 1, 1, 1],
-    [1, 3, 5, 1],
-    [3, 3, 3, 1],
-    [3, 2, 2, 1],
-    [2, 1, 6, 1],
-    [0, 3, 3, 1],
-    [1, 2, 4, 1],
-    [1, 2, 2, 1],
-
-    [0, 1, 6, 0],
-    [1, 3, 4, 0],
-    [1, 3, 3, 0],
-    [0, 2, 3, 0],
-    [2, 2, 2, 0],
-    [0, 0, 1, 0],
-    [1, 2, 3, 0],
-    [1, 1, 0, 0],
-    [1, 0, 0, 1]
-]
-
 testing_attrset = [(0, [0, 1, 2, 3], '2nd'), (1, [0, 1, 2, 3],'3rd'), (2, [0, 1, 2, 3, 4, 5, 6], '4th')]
-dt = GenerateTree(testing_data, testing_attrset[:])
 X_train = [data + [train_label[idx]] for idx, data in enumerate(train_input)]
 X_test = [data + [test_label[idx]] for idx, data in enumerate(test_input)]
 SalaryPredict_DT_ID3 = GenerateTree(X_train, AttrSet[:])
