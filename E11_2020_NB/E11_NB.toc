@@ -1,0 +1,4 @@
+\contentsline {section}{\numberline {1}Datasets}{2}{section.1}%
+\contentsline {section}{\numberline {2}Naive Bayes}{3}{section.2}%
+\contentsline {section}{\numberline {3}Task}{4}{section.3}%
+\contentsline {section}{\numberline {4}Codes and Results}{4}{section.4}%
